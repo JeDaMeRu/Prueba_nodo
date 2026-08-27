@@ -1,0 +1,26 @@
+// ==========================================
+// DIAGNÓSTICO DE PUERTO SERIAL - ESP32
+// ==========================================
+
+void setup() {
+
+  Serial.begin(115200);
+
+  // Dar tiempo para que se inicialice el puerto
+  delay(1000);
+
+  Serial.println();
+  Serial.println("================================");
+  Serial.println("   DIAGNOSTICO SERIAL ESP32");
+  Serial.println("================================");
+  Serial.println("Puerto serial iniciado correctamente");
+  Serial.println("Baud rate: 115200");
+  Serial.println("--------------------------------");
+}
+
+void loop() {
+
+  Serial.println("ESP32 funcionando - mensaje serial");
+
+  delay(1000);
+}
